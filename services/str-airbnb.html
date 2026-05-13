@@ -94,8 +94,14 @@
 </div>
 <nav class="px-4 sm:px-6 py-6 pb-12">
 <a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="../index.html">Home</a>
-<div class="py-3 border-b border-secondary">
-<p class="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Services</p>
+<div class="border-b border-secondary">
+<button id="mobile-services-toggle" type="button" aria-expanded="false" class="w-full flex items-center justify-between py-3 text-base font-semibold text-primary transition-colors">
+<span>Services</span>
+<svg id="mobile-services-chevron" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+</svg>
+</button>
+<div id="mobile-services-menu" class="hidden pb-3 pl-1">
 <a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="residential.html">Residential Cleaning</a>
 <a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="commercial.html">Commercial Cleaning</a>
 <a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="recurring.html">Recurring Cleaning</a>
@@ -105,8 +111,8 @@
 <a class="block py-2 text-sm font-semibold text-primary" href="str-airbnb.html">Short Term Rental and Airbnb</a>
 <a class="block py-2 text-sm font-semibold text-primary mt-2" href="../services.html">View All Services &rarr;</a>
 </div>
+</div>
 <a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="../about.html">About</a>
-<a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="../contact.html">Contact</a>
 <a href="../contact.html" class="block text-center mt-6 rounded-lg bg-primary px-5 py-3.5 text-sm font-semibold text-white hover:bg-primary/90 transition-all">Request a Quote</a>
 <div class="mt-8 pt-6 border-t border-secondary text-sm text-slate-500 space-y-2">
 <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span> <a href="mailto:hello@easydaycleaningco.com" class="hover:text-primary">hello@easydaycleaningco.com</a></p>
@@ -288,10 +294,19 @@
     var toggle = document.getElementById('mobile-menu-toggle');
     var close = document.getElementById('mobile-menu-close');
     var menu = document.getElementById('mobile-menu');
+    var servicesToggle = document.getElementById('mobile-services-toggle');
+    var servicesMenu = document.getElementById('mobile-services-menu');
+    var servicesChevron = document.getElementById('mobile-services-chevron');
     function open() { menu.classList.remove('hidden'); document.body.classList.add('menu-open'); }
     function shut() { menu.classList.add('hidden'); document.body.classList.remove('menu-open'); }
     if (toggle) toggle.addEventListener('click', open);
     if (close) close.addEventListener('click', shut);
+    if (servicesToggle) servicesToggle.addEventListener('click', function() {
+        var expanded = !servicesMenu.classList.contains('hidden');
+        servicesMenu.classList.toggle('hidden');
+        servicesChevron.classList.toggle('rotate-180');
+        servicesToggle.setAttribute('aria-expanded', String(!expanded));
+    });
     if (menu) menu.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', shut); });
 })();
 </script>
