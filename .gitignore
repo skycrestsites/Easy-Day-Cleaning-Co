@@ -1,0 +1,9 @@
+# Original template reference - not part of the deliverable site
+style 4/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
