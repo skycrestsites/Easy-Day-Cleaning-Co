@@ -39,6 +39,7 @@
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
         .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; }
+        body.menu-open { overflow: hidden; }
     </style>
 </head>
 <body class="bg-background-light text-ink">
@@ -69,12 +70,46 @@
 <a class="text-sm font-semibold text-ink hover:text-primary transition-colors" href="../about.html">About</a>
 <a class="text-sm font-semibold text-ink hover:text-primary transition-colors" href="../contact.html">Contact</a>
 </nav>
-<div class="flex items-center gap-4">
+<div class="flex items-center gap-3">
 <a href="../contact.html" class="hidden sm:flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-primary/90 transition-all">Request a Quote</a>
+<button id="mobile-menu-toggle" aria-label="Open menu" class="lg:hidden p-2 -mr-2 text-ink hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
 </div>
 </div>
 </div>
 </header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-[60] bg-white overflow-y-auto">
+<div class="flex h-20 items-center justify-between px-4 sm:px-6 border-b border-secondary">
+<a href="../index.html" class="text-xl font-bold tracking-tight text-primary">Easy Day Cleaning Co</a>
+<button id="mobile-menu-close" aria-label="Close menu" class="p-2 -mr-2 text-ink hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<nav class="px-4 sm:px-6 py-6 pb-12">
+<a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="../index.html">Home</a>
+<div class="py-3 border-b border-secondary">
+<p class="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Services</p>
+<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="residential.html">Residential Cleaning</a>
+<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="commercial.html">Commercial Cleaning</a>
+<a class="block py-2 text-sm font-semibold text-primary" href="recurring.html">Recurring Cleaning</a>
+<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="deep-cleaning.html">Deep Cleaning</a>
+<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="move-in-out.html">Move In and Move Out</a>
+<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="post-construction.html">Post Construction</a>
+<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="str-airbnb.html">Short Term Rental and Airbnb</a>
+<a class="block py-2 text-sm font-semibold text-primary mt-2" href="../services.html">View All Services &rarr;</a>
+</div>
+<a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="../about.html">About</a>
+<a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="../contact.html">Contact</a>
+<a href="../contact.html" class="block text-center mt-6 rounded-lg bg-primary px-5 py-3.5 text-sm font-semibold text-white hover:bg-primary/90 transition-all">Request a Quote</a>
+<div class="mt-8 pt-6 border-t border-secondary text-sm text-slate-500 space-y-2">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span> <a href="mailto:hello@easydaycleaningco.com" class="hover:text-primary">hello@easydaycleaningco.com</a></p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">location_on</span> Oakland County, Michigan</p>
+</div>
+</nav>
+</div>
 
 <main>
 
@@ -93,7 +128,7 @@
 <span class="font-semibold">Recurring Cleaning</span>
 </nav>
 <span class="inline-flex items-center rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs font-semibold mb-5 uppercase tracking-wider">Ongoing Care, Tailored to You</span>
-<h1 class="text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight mb-6 max-w-3xl">Recurring Cleaning Plans</h1>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight mb-6 max-w-3xl">Recurring Cleaning Plans</h1>
 <p class="text-lg text-white/90 max-w-2xl leading-relaxed mb-8">Ongoing cleaning on a schedule that fits your life or business. Tailored, dependable, and seamless from the first visit forward.</p>
 <a href="../contact.html" class="inline-flex items-center gap-2 rounded-lg bg-primary hover:bg-primary/90 px-7 py-3.5 text-sm font-semibold text-white transition-all shadow-xl">Request a Quote <span class="material-symbols-outlined text-base">arrow_forward</span></a>
 </div>
@@ -105,7 +140,7 @@
 <div class="grid lg:grid-cols-3 gap-12">
 <div class="lg:col-span-2">
 <span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary mb-4 uppercase tracking-wider">About This Service</span>
-<h2 class="text-3xl lg:text-4xl font-bold tracking-tight mb-6 text-ink">Cleaning You Can Set and Forget</h2>
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-6 text-ink">Cleaning You Can Set and Forget</h2>
 <p class="text-slate-600 leading-relaxed mb-5">Our recurring cleaning plans are designed for clients who want a clean home or business without the ongoing planning. We work with you to build a schedule, define priorities, and deliver the same exceptional care every visit. The result is a space that stays in great shape, week after week.</p>
 <p class="text-slate-600 leading-relaxed mb-5">Recurring service is available for both residential and commercial spaces. We offer weekly, biweekly, and monthly visits, and the plan is always tailored to the size of your space, your priorities, and your schedule. Pricing is by quote, so you only pay for what you actually need.</p>
 <p class="text-slate-600 leading-relaxed">Long term clients tell us the same thing: less to think about, more time back, and the comfort of knowing the cleaning is handled.</p>
@@ -132,7 +167,7 @@
 <section class="py-20 bg-secondary/40">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center max-w-2xl mx-auto mb-12">
-<h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-ink mb-4">Why Choose Recurring Service</h2>
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-ink mb-4">Why Choose Recurring Service</h2>
 <p class="text-slate-600">Consistency that protects your space and gives you time back.</p>
 </div>
 <div class="grid md:grid-cols-3 gap-6">
@@ -166,7 +201,7 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center max-w-2xl mx-auto mb-12">
 <span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary mb-4 uppercase tracking-wider">Gallery</span>
-<h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-ink">A Consistent Standard, Every Visit</h2>
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-ink">A Consistent Standard, Every Visit</h2>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 <img alt="Clean kitchen counter and stove" class="rounded-xl object-cover w-full h-64 shadow-md" src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=700&q=80"/>
@@ -180,7 +215,7 @@
 <!-- CTA -->
 <section class="py-20 bg-primary text-white">
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<h2 class="text-4xl font-bold mb-5 tracking-tight">Let Us Build a Plan Around You</h2>
+<h2 class="text-3xl sm:text-4xl font-bold mb-5 tracking-tight">Let Us Build a Plan Around You</h2>
 <p class="text-white/90 text-lg mb-10 max-w-2xl mx-auto">Recurring plans are quote based. Contact us and we will tailor a schedule that fits.</p>
 <a href="../contact.html" class="inline-block bg-white text-primary hover:bg-secondary px-10 py-5 rounded-lg text-base font-semibold transition-all shadow-2xl">Request a Quote</a>
 </div>
@@ -244,6 +279,19 @@
 </div>
 </div>
 </footer>
+
+<script>
+(function() {
+    var toggle = document.getElementById('mobile-menu-toggle');
+    var close = document.getElementById('mobile-menu-close');
+    var menu = document.getElementById('mobile-menu');
+    function open() { menu.classList.remove('hidden'); document.body.classList.add('menu-open'); }
+    function shut() { menu.classList.add('hidden'); document.body.classList.remove('menu-open'); }
+    if (toggle) toggle.addEventListener('click', open);
+    if (close) close.addEventListener('click', shut);
+    if (menu) menu.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', shut); });
+})();
+</script>
 
 </body>
 </html>
