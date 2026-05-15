@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Easy Day Cleaning Co | Trusted Cleaning Services in Oakland County</title>
-<meta name="description" content="Easy Day Cleaning Co provides trusted, reliable cleaning services across Oakland County. Residential, commercial, short-term rental, move in/out, post construction, and recurring cleaning, all handled with detail-oriented care."/>
+<meta name="description" content="Easy Day Cleaning Co provides trusted, reliable cleaning services across Oakland County. Residential, commercial, short term rental, move in/out, post construction, deep, and recurring cleaning. Cleaning Made Easy."/>
 <meta name="keywords" content="cleaning services Oakland County, residential cleaning, commercial cleaning, Airbnb cleaning, move in cleaning, deep cleaning, recurring cleaning, Easy Day Cleaning Co"/>
 <meta name="author" content="Easy Day Cleaning Co"/>
 <meta name="robots" content="index, follow"/>
@@ -38,7 +38,7 @@
   ]
 }
 </script>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -47,61 +47,71 @@
                 extend: {
                     colors: {
                         "primary": "#246de3",
+                        "primary-dark": "#1a55b8",
                         "secondary": "#dce3e3",
-                        "background-light": "#ffffff",
                         "ink": "#0f172a",
+                        "muted": "#f7f9fb",
                     },
-                    fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    fontFamily: { "display": ["Space Grotesk", "sans-serif"] },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.25rem", "full": "9999px"},
                 },
             },
         }
     </script>
 <style>
         body { font-family: 'Space Grotesk', sans-serif; -webkit-font-smoothing: antialiased; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        @media (min-width: 768px) { .stagger-grid > div:nth-child(even) { transform: translateY(2rem); } }
-        .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
-        .dropdown-menu { opacity: 0; visibility: hidden; transform: translate(-50%, -10px); transition: all 0.2s ease; }
-        .hero-gradient { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 50%, rgba(220,227,227,0.4) 100%); }
-        #mobile-menu.open { display: block; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48; }
         body.menu-open { overflow: hidden; }
+        .section-divider { width: 60px; height: 2px; background: #246de3; margin: 0 auto; }
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+        .tab-btn.active { color: #246de3; }
+        .tab-btn.active::after { content: ''; display: block; width: 100%; height: 2px; background: #246de3; margin-top: 6px; }
     </style>
 </head>
-<body class="bg-background-light text-ink">
+<body class="bg-white text-ink">
+
+<!-- Utility Bar -->
+<div class="bg-ink text-white text-xs sm:text-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-10">
+<div class="flex items-center gap-4 sm:gap-6 overflow-hidden">
+<a href="mailto:hello@easydaycleaningco.com" class="hidden sm:flex items-center gap-2 hover:text-primary transition-colors whitespace-nowrap">
+<span class="material-symbols-outlined text-base">mail</span>
+hello@easydaycleaningco.com
+</a>
+<span class="flex items-center gap-2 whitespace-nowrap">
+<span class="material-symbols-outlined text-base text-primary">location_on</span>
+Oakland County, MI
+</span>
+</div>
+<div class="flex items-center gap-3">
+<a aria-label="Instagram" href="https://www.instagram.com/easydaycleaningco/" target="_blank" rel="noopener" class="hover:text-primary transition-colors">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a href="contact.html" class="inline-flex items-center gap-1.5 rounded-full bg-primary hover:bg-primary-dark px-4 py-1.5 font-semibold transition-colors whitespace-nowrap">
+<span class="material-symbols-outlined text-sm">chat_bubble</span>
+Get a Quote
+</a>
+</div>
+</div>
+</div>
 
 <!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 w-full border-b border-secondary bg-white/90 backdrop-blur-md">
+<header class="sticky top-0 z-40 w-full bg-white border-b border-secondary shadow-sm">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex h-20 items-center justify-between">
+<div class="flex h-20 items-center justify-between gap-4">
 <a href="index.html" class="flex items-center gap-2 min-w-0">
 <span class="text-lg sm:text-xl lg:text-2xl font-bold tracking-tight text-primary whitespace-nowrap">Easy Day Cleaning Co</span>
 </a>
 <nav class="hidden lg:flex items-center gap-10">
-<a class="text-sm font-semibold text-ink hover:text-primary transition-colors" href="index.html">Home</a>
-<div class="dropdown relative group">
-<a class="text-sm font-semibold text-ink hover:text-primary transition-colors cursor-pointer flex items-center gap-1" href="services.html">Services <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span></a>
-<div class="dropdown-menu absolute left-1/2 -translate-x-1/2 top-full pt-3">
-<div class="bg-white shadow-2xl rounded-xl border border-secondary overflow-hidden min-w-[260px]">
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-secondary" href="services/residential.html">Residential Cleaning</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-secondary" href="services/commercial.html">Commercial Cleaning</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-secondary" href="services/recurring.html">Recurring Cleaning</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-secondary" href="services/deep-cleaning.html">Deep Cleaning</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-secondary" href="services/move-in-out.html">Move In and Move Out</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-secondary" href="services/post-construction.html">Post Construction</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium" href="services/str-airbnb.html">Short Term Rental and Airbnb</a>
-</div>
-</div>
-</div>
-<a class="text-sm font-semibold text-ink hover:text-primary transition-colors" href="about.html">About</a>
-<a class="text-sm font-semibold text-ink hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="text-sm font-semibold text-primary transition-colors" href="index.html">HOME</a>
+<a class="text-sm font-semibold text-ink hover:text-primary transition-colors" href="services.html">SERVICES</a>
+<a class="text-sm font-semibold text-ink hover:text-primary transition-colors" href="contact.html">CONTACT</a>
 </nav>
 <div class="flex items-center gap-3">
-<a href="contact.html" class="hidden sm:flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-primary/90 transition-all">
-                    Request a Quote
-                </a>
+<a href="contact.html" class="hidden sm:inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-dark px-5 py-2.5 text-sm font-semibold text-white transition-all">
+Request a Quote
+</a>
 <button id="mobile-menu-toggle" aria-label="Open menu" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg bg-secondary hover:bg-secondary/70 text-ink transition-colors flex-shrink-0">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" aria-hidden="true">
 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
@@ -123,325 +133,228 @@
 </button>
 </div>
 <nav class="px-4 sm:px-6 py-6 pb-12">
-<a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="index.html">Home</a>
-<div class="border-b border-secondary">
-<button id="mobile-services-toggle" type="button" aria-expanded="false" class="w-full flex items-center justify-between py-3 text-base font-semibold text-ink hover:text-primary transition-colors">
-<span>Services</span>
-<svg id="mobile-services-chevron" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" aria-hidden="true">
-<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-</svg>
-</button>
-<div id="mobile-services-menu" class="hidden pb-3 pl-1">
-<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="services/residential.html">Residential Cleaning</a>
-<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="services/commercial.html">Commercial Cleaning</a>
-<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="services/recurring.html">Recurring Cleaning</a>
-<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="services/deep-cleaning.html">Deep Cleaning</a>
-<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="services/move-in-out.html">Move In and Move Out</a>
-<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="services/post-construction.html">Post Construction</a>
-<a class="block py-2 text-sm font-medium text-slate-700 hover:text-primary" href="services/str-airbnb.html">Short Term Rental and Airbnb</a>
-<a class="block py-2 text-sm font-semibold text-primary mt-2" href="services.html">View All Services &rarr;</a>
-</div>
-</div>
-<a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="about.html">About</a>
-<a href="contact.html" class="block text-center mt-6 rounded-lg bg-primary px-5 py-3.5 text-sm font-semibold text-white hover:bg-primary/90 transition-all">Request a Quote</a>
+<a class="block py-3 text-base font-semibold text-primary border-b border-secondary" href="index.html">Home</a>
+<a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="services.html">Services</a>
+<a class="block py-3 text-base font-semibold text-ink hover:text-primary border-b border-secondary" href="contact.html">Contact</a>
+<a href="contact.html" class="block text-center mt-6 rounded-full bg-primary px-5 py-3.5 text-sm font-semibold text-white hover:bg-primary-dark transition-colors">Request a Quote</a>
 <div class="mt-8 pt-6 border-t border-secondary text-sm text-slate-500 space-y-2">
 <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span> <a href="mailto:hello@easydaycleaningco.com" class="hover:text-primary">hello@easydaycleaningco.com</a></p>
 <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">location_on</span> Oakland County, Michigan</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">photo_camera</span> <a href="https://www.instagram.com/easydaycleaningco/" target="_blank" rel="noopener" class="hover:text-primary">@easydaycleaningco</a></p>
 </div>
 </nav>
 </div>
 
 <main>
 
-<!-- Hero Section -->
-<section class="relative overflow-hidden pt-20 pb-24 lg:pt-28 lg:pb-32">
+<!-- Hero -->
+<section class="relative overflow-hidden">
 <div class="absolute inset-0 z-0">
-<div class="absolute inset-0 hero-gradient z-10"></div>
-<div class="w-full h-full bg-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80');"></div>
+<div class="absolute inset-0 bg-ink/55 z-10"></div>
+<img alt="Professional cleaning team at work in a modern home" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80"/>
 </div>
-<div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-<div class="max-w-2xl">
-<span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary mb-6 uppercase tracking-wider">Trusted Cleaning in Oakland County</span>
-<h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-ink mb-6">
-                        Cleaning <span class="text-primary">Made Easy.</span>
+<div class="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40 text-center text-white">
+<p class="text-sm sm:text-base font-medium tracking-widest uppercase text-white/85 mb-4">Professional Cleaning Services</p>
+<h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-8">
+Cleaning Made Easy.<br/>We Promise.
 </h1>
-<p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl">
-                        Reliable, detail-oriented cleaning for homes and businesses. We bring exceptional care, consistent results, and a seamless experience to every visit.
-                    </p>
-<div class="flex flex-wrap gap-4">
-<a href="contact.html" class="flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white shadow-xl shadow-primary/20 hover:-translate-y-0.5 transition-all">
-                            Request a Quote
-                        </a>
-<a href="services.html" class="flex items-center justify-center rounded-lg bg-white border border-secondary px-8 py-4 text-base font-semibold text-ink hover:bg-secondary/40 transition-all">
-                            View Our Services
-                        </a>
-</div>
-<div class="flex flex-wrap items-center gap-6 mt-10 pt-8 border-t border-secondary">
+<a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white px-10 py-4 text-base font-semibold text-white hover:bg-white hover:text-primary transition-all">
+Request a Quote
+</a>
+<div class="flex flex-wrap justify-center items-center gap-6 sm:gap-10 mt-14 text-sm">
 <div class="flex items-center gap-2">
-<div class="flex text-amber-400">
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<span class="text-sm font-semibold text-slate-700">5 Star Rated</span>
+<span class="material-symbols-outlined text-amber-400 text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold">5 Star Rated</span>
 </div>
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">location_on</span>
-<span class="text-sm font-semibold text-slate-700">Locally Owned</span>
+<span class="material-symbols-outlined text-primary text-base">location_on</span>
+<span class="font-semibold">Locally Owned</span>
 </div>
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">verified</span>
-<span class="text-sm font-semibold text-slate-700">Trusted and Reliable</span>
-</div>
-</div>
-</div>
-<div class="lg:justify-self-end w-full max-w-md">
-<div class="rounded-xl border border-secondary bg-white/90 p-8 shadow-2xl backdrop-blur-xl">
-<h3 class="text-xl font-bold mb-2 text-ink">Request a Quote</h3>
-<p class="text-sm text-slate-500 mb-6">Share a few details and we will get back to you with a tailored quote.</p>
-<form class="space-y-4" action="mailto:hello@easydaycleaningco.com" method="post" enctype="text/plain">
-<div>
-<label class="text-xs font-semibold uppercase text-slate-500 mb-1 block tracking-wider">Service Type</label>
-<select name="service" class="w-full rounded-lg border-secondary focus:border-primary focus:ring-primary text-sm">
-<option>Residential Cleaning</option>
-<option>Commercial Cleaning</option>
-<option>Recurring Cleaning</option>
-<option>Deep Cleaning</option>
-<option>Move In or Move Out</option>
-<option>Post Construction</option>
-<option>Short Term Rental and Airbnb</option>
-</select>
-</div>
-<div>
-<label class="text-xs font-semibold uppercase text-slate-500 mb-1 block tracking-wider">Name</label>
-<input name="name" class="w-full rounded-lg border-secondary focus:border-primary focus:ring-primary text-sm" placeholder="Your full name" type="text"/>
-</div>
-<div>
-<label class="text-xs font-semibold uppercase text-slate-500 mb-1 block tracking-wider">Email</label>
-<input name="email" class="w-full rounded-lg border-secondary focus:border-primary focus:ring-primary text-sm" placeholder="you@email.com" type="email"/>
-</div>
-<button type="submit" class="w-full rounded-lg bg-primary py-3 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">
-                                Send Request
-                            </button>
-</form>
-</div>
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span class="font-semibold">Trusted and Reliable</span>
 </div>
 </div>
 </div>
 </section>
 
-<!-- Trust Signals Bar -->
-<section class="py-16 bg-primary text-white">
+<!-- Services Preview -->
+<section class="py-20 lg:py-28 bg-white">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-<div class="p-4">
-<div class="flex justify-center mb-3"><span class="material-symbols-outlined text-4xl">star</span></div>
-<div class="text-2xl lg:text-3xl font-bold mb-1">5 Star Rated</div>
-<div class="text-sm font-medium uppercase tracking-widest opacity-80">Trusted by Clients</div>
+<div class="text-center max-w-2xl mx-auto mb-14">
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-4">Our Cleaning Services</h2>
+<div class="section-divider mb-6"></div>
+<p class="text-slate-600">Tailored cleaning solutions for homes, offices, and short term rentals across Oakland County. Every visit delivered with exceptional care.</p>
 </div>
-<div class="p-4">
-<div class="flex justify-center mb-3"><span class="material-symbols-outlined text-4xl">store</span></div>
-<div class="text-2xl lg:text-3xl font-bold mb-1">Locally Owned</div>
-<div class="text-sm font-medium uppercase tracking-widest opacity-80">Oakland County</div>
+
+<div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+
+<div class="bg-white rounded-2xl p-8 lg:p-10 shadow-md hover:shadow-2xl hover:-translate-y-1 border border-secondary transition-all text-center">
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="font-size: 44px;">cottage</span>
 </div>
-<div class="p-4">
-<div class="flex justify-center mb-3"><span class="material-symbols-outlined text-4xl">handshake</span></div>
-<div class="text-2xl lg:text-3xl font-bold mb-1">Reliable</div>
-<div class="text-sm font-medium uppercase tracking-widest opacity-80">Consistent Service</div>
+<h3 class="text-xl font-bold mb-5 text-ink">Residential Cleaning</h3>
+<ul class="space-y-2 text-sm text-slate-600 text-left mb-8 inline-block">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Kitchens and bathrooms</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Living spaces and bedrooms</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Tailored to your home</li>
+</ul>
+<div>
+<a href="services.html#residential" class="inline-flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-white px-7 py-2.5 text-sm font-semibold transition-all">
+Read More
+</a>
 </div>
-<div class="p-4">
-<div class="flex justify-center mb-3"><span class="material-symbols-outlined text-4xl">workspace_premium</span></div>
-<div class="text-2xl lg:text-3xl font-bold mb-1">2 Years</div>
-<div class="text-sm font-medium uppercase tracking-widest opacity-80">In Business</div>
+</div>
+
+<div class="bg-white rounded-2xl p-8 lg:p-10 shadow-md hover:shadow-2xl hover:-translate-y-1 border border-secondary transition-all text-center">
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="font-size: 44px;">domain</span>
+</div>
+<h3 class="text-xl font-bold mb-5 text-ink">Commercial Cleaning</h3>
+<ul class="space-y-2 text-sm text-slate-600 text-left mb-8 inline-block">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Offices and workspaces</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Lobbies and shared areas</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Flexible scheduling</li>
+</ul>
+<div>
+<a href="services.html#commercial" class="inline-flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-white px-7 py-2.5 text-sm font-semibold transition-all">
+Read More
+</a>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl p-8 lg:p-10 shadow-md hover:shadow-2xl hover:-translate-y-1 border border-secondary transition-all text-center">
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="font-size: 44px;">event_repeat</span>
+</div>
+<h3 class="text-xl font-bold mb-5 text-ink">Recurring Cleaning</h3>
+<ul class="space-y-2 text-sm text-slate-600 text-left mb-8 inline-block">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Weekly, biweekly, monthly</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Residential and commercial</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">check</span> Tailored ongoing plans</li>
+</ul>
+<div>
+<a href="services.html#recurring" class="inline-flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-white px-7 py-2.5 text-sm font-semibold transition-all">
+Read More
+</a>
+</div>
+</div>
+
+</div>
+
+<div class="text-center mt-12">
+<a href="services.html" class="inline-flex items-center gap-2 rounded-full bg-primary hover:bg-primary-dark px-8 py-3.5 text-sm font-semibold text-white transition-all">
+View All Services
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- About / Tabs -->
+<section class="py-20 lg:py-28 bg-muted">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+<div>
+<img alt="Cleaning team member with supplies in a bright, clean home" class="rounded-2xl shadow-xl w-full h-[420px] lg:h-[520px] object-cover" src="https://images.unsplash.com/photo-1581578017093-cd30fce4eeb7?w=900&q=80"/>
+</div>
+
+<div>
+<p class="text-sm font-semibold tracking-widest uppercase text-primary mb-3">About Easy Day Cleaning Co</p>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-4">A Locally Owned Team You Can Trust</h2>
+
+<div class="flex items-center gap-6 sm:gap-8 mb-6 border-b border-secondary">
+<button data-tab="provide" class="tab-btn active py-3 text-sm font-semibold text-slate-500 hover:text-primary transition-colors">Our Promise</button>
+<button data-tab="works" class="tab-btn py-3 text-sm font-semibold text-slate-500 hover:text-primary transition-colors">How It Works</button>
+<button data-tab="serve" class="tab-btn py-3 text-sm font-semibold text-slate-500 hover:text-primary transition-colors">Who We Serve</button>
+</div>
+
+<div data-panel="provide" class="tab-panel active">
+<p class="text-slate-600 leading-relaxed mb-6">Founded by Christopher Kayj, Easy Day Cleaning Co was built to bring dependable, detail-oriented cleaning to Oakland County. We focus on the things that matter most to our clients: professionalism, consistency, and clear communication on every visit.</p>
+<div class="grid sm:grid-cols-2 gap-3">
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5">verified</span><span class="text-slate-700 text-sm font-medium">Trusted and reliable team</span></div>
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5">checklist</span><span class="text-slate-700 text-sm font-medium">Detail-oriented every visit</span></div>
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5">forum</span><span class="text-slate-700 text-sm font-medium">Seamless communication</span></div>
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5">favorite</span><span class="text-slate-700 text-sm font-medium">Exceptional care, always</span></div>
+</div>
+</div>
+
+<div data-panel="works" class="tab-panel">
+<p class="text-slate-600 leading-relaxed mb-6">From your first message to your scheduled visit, we keep the entire experience seamless and tailored to your space.</p>
+<div class="space-y-3">
+<div class="flex gap-3"><span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0 text-sm">1</span><div><span class="font-semibold text-ink text-sm">Reach Out</span><p class="text-slate-600 text-sm">Tell us about your space and what you need.</p></div></div>
+<div class="flex gap-3"><span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0 text-sm">2</span><div><span class="font-semibold text-ink text-sm">Tailored Quote</span><p class="text-slate-600 text-sm">A clear, no-obligation quote built around your needs.</p></div></div>
+<div class="flex gap-3"><span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0 text-sm">3</span><div><span class="font-semibold text-ink text-sm">Schedule Service</span><p class="text-slate-600 text-sm">Pick a one time visit or a recurring plan.</p></div></div>
+<div class="flex gap-3"><span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0 text-sm">4</span><div><span class="font-semibold text-ink text-sm">Enjoy the Results</span><p class="text-slate-600 text-sm">A clean space, consistent results, every time.</p></div></div>
+</div>
+</div>
+
+<div data-panel="serve" class="tab-panel">
+<p class="text-slate-600 leading-relaxed mb-6">Our clients value professionalism, consistency, and dependable communication. We serve a wide range of homes and businesses across Oakland County.</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5">check_circle</span><span class="text-slate-700 text-sm">Homeowners, families, and busy professionals</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5">check_circle</span><span class="text-slate-700 text-sm">Working professionals seeking recurring service</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5">check_circle</span><span class="text-slate-700 text-sm">Offices, commercial spaces, and small businesses</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5">check_circle</span><span class="text-slate-700 text-sm">Short term rental and Airbnb hosts</span></li>
+</ul>
+</div>
+
+<a href="services.html" class="inline-flex items-center gap-2 mt-8 rounded-full bg-primary hover:bg-primary-dark px-7 py-3 text-sm font-semibold text-white transition-all">
+Explore Our Services
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
 </div>
 </div>
 </div>
 </section>
 
 <!-- Why Choose Us -->
-<section id="about" class="py-24 bg-background-light">
+<section class="py-20 lg:py-28 bg-white">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary mb-4 uppercase tracking-wider">Why Choose Us</span>
-<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5 text-ink">Professional Care, Every Time</h2>
-<p class="text-slate-600 text-lg">A trusted local team built on consistency, communication, and exceptional care for every home and business we serve.</p>
+<div class="text-center max-w-2xl mx-auto mb-14">
+<p class="text-sm font-semibold tracking-widest uppercase text-primary mb-3">Why Choose Us</p>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-4">Professional Care, Every Time</h2>
+<div class="section-divider"></div>
 </div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white p-10 rounded-xl border border-secondary shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">verified_user</span>
-</div>
-<h3 class="text-xl font-bold mb-3 text-ink">Trusted and Reliable</h3>
-<p class="text-slate-600 leading-relaxed">A dependable team you can count on. We arrive on schedule and treat every space with respect and exceptional care.</p>
-</div>
-<div class="bg-white p-10 rounded-xl border border-secondary shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">checklist</span>
-</div>
-<h3 class="text-xl font-bold mb-3 text-ink">Detail-Oriented Work</h3>
-<p class="text-slate-600 leading-relaxed">No corner is overlooked. We take pride in delivering thorough, consistent results that hold up to a closer look.</p>
-</div>
-<div class="bg-white p-10 rounded-xl border border-secondary shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">forum</span>
-</div>
-<h3 class="text-xl font-bold mb-3 text-ink">Seamless Communication</h3>
-<p class="text-slate-600 leading-relaxed">Clear, dependable communication from your first message through every visit. A stress-free experience from start to finish.</p>
-</div>
-</div>
-</div>
-</section>
 
-<!-- Simple Process -->
-<section class="py-24 bg-secondary/30">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid lg:grid-cols-2 gap-16 items-center">
-<div>
-<span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary mb-4 uppercase tracking-wider">How It Works</span>
-<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-ink">A Simple, Tailored Process</h2>
-<p class="text-slate-600 mb-10 leading-relaxed">We make it easy to get the cleaning you need. From your first message to your scheduled visit, we keep things straightforward and tailored to your space.</p>
-<div class="space-y-6">
-<div class="flex gap-5">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">1</div>
-<div>
-<h3 class="font-bold text-ink mb-1">Reach Out</h3>
-<p class="text-slate-600 text-sm leading-relaxed">Send us a message or call. Tell us about your space and what you are looking for.</p>
+<div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+<div class="text-center p-8">
+<div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">verified_user</span>
 </div>
+<h3 class="text-lg font-bold text-ink mb-2">Trusted and Reliable</h3>
+<p class="text-slate-600 text-sm leading-relaxed">A dependable team you can welcome into your home or office with confidence.</p>
 </div>
-<div class="flex gap-5">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">2</div>
-<div>
-<h3 class="font-bold text-ink mb-1">Receive a Tailored Quote</h3>
-<p class="text-slate-600 text-sm leading-relaxed">We provide a clear quote built around your specific needs, with no hidden surprises.</p>
+<div class="text-center p-8">
+<div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">checklist</span>
 </div>
+<h3 class="text-lg font-bold text-ink mb-2">Detail-Oriented Work</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Thorough cleaning that holds up to a closer look, visit after visit.</p>
 </div>
-<div class="flex gap-5">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">3</div>
-<div>
-<h3 class="font-bold text-ink mb-1">Schedule Your Service</h3>
-<p class="text-slate-600 text-sm leading-relaxed">Choose a time that fits your calendar. Recurring schedules are available for ongoing care.</p>
+<div class="text-center p-8">
+<div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">forum</span>
 </div>
+<h3 class="text-lg font-bold text-ink mb-2">Seamless Communication</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Clear, dependable communication from your first message through every visit.</p>
 </div>
-<div class="flex gap-5">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">4</div>
-<div>
-<h3 class="font-bold text-ink mb-1">Enjoy a Clean Space</h3>
-<p class="text-slate-600 text-sm leading-relaxed">Our team delivers consistent, thorough results so you can focus on what matters most.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="relative">
-<img alt="Clean, modern home interior" class="rounded-xl shadow-2xl w-full h-[600px] object-cover" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80"/>
-<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-secondary max-w-xs hidden md:block">
-<div class="flex items-center gap-3 mb-2">
-<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary">favorite</span>
-</div>
-<h4 class="font-bold text-ink">Stress-Free</h4>
-</div>
-<p class="text-slate-600 text-sm">Tailored cleaning plans for homes, offices, and rentals across Oakland County.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Services Overview -->
-<section id="services" class="py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
-<div class="max-w-2xl">
-<span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary mb-4 uppercase tracking-wider">Our Services</span>
-<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-ink">Cleaning Tailored to Your Space</h2>
-<p class="text-slate-600 text-lg">From homes to offices to short term rentals, we deliver consistent, professional results across every service we offer.</p>
-</div>
-<a href="services.html" class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all">View All Services <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-<a href="services/residential.html" class="relative group overflow-hidden rounded-xl aspect-[4/5] shadow-md block">
-<div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80');"></div>
-<div class="absolute bottom-0 left-0 p-8 z-20 text-white">
-<h3 class="text-2xl font-bold mb-2">Residential Cleaning</h3>
-<p class="text-white/85 text-sm mb-4">Reliable home cleaning with a personal touch.</p>
-<span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</a>
-
-<a href="services/commercial.html" class="relative group overflow-hidden rounded-xl aspect-[4/5] shadow-md block">
-<div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80');"></div>
-<div class="absolute bottom-0 left-0 p-8 z-20 text-white">
-<h3 class="text-2xl font-bold mb-2">Commercial Cleaning</h3>
-<p class="text-white/85 text-sm mb-4">Professional service for offices and workspaces.</p>
-<span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</a>
-
-<a href="services/recurring.html" class="relative group overflow-hidden rounded-xl aspect-[4/5] shadow-md block">
-<div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80');"></div>
-<div class="absolute bottom-0 left-0 p-8 z-20 text-white">
-<h3 class="text-2xl font-bold mb-2">Recurring Cleaning</h3>
-<p class="text-white/85 text-sm mb-4">Ongoing care on a schedule that suits you.</p>
-<span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</a>
-
-<a href="services/deep-cleaning.html" class="relative group overflow-hidden rounded-xl aspect-[4/5] shadow-md block">
-<div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80');"></div>
-<div class="absolute bottom-0 left-0 p-8 z-20 text-white">
-<h3 class="text-2xl font-bold mb-2">Deep Cleaning</h3>
-<p class="text-white/85 text-sm mb-4">Thorough, top to bottom attention to detail.</p>
-<span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</a>
-
-<a href="services/move-in-out.html" class="relative group overflow-hidden rounded-xl aspect-[4/5] shadow-md block">
-<div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80');"></div>
-<div class="absolute bottom-0 left-0 p-8 z-20 text-white">
-<h3 class="text-2xl font-bold mb-2">Move In and Move Out</h3>
-<p class="text-white/85 text-sm mb-4">A fresh start for a new home or final walkthrough.</p>
-<span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</a>
-
-<a href="services/post-construction.html" class="relative group overflow-hidden rounded-xl aspect-[4/5] shadow-md block">
-<div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80');"></div>
-<div class="absolute bottom-0 left-0 p-8 z-20 text-white">
-<h3 class="text-2xl font-bold mb-2">Post Construction</h3>
-<p class="text-white/85 text-sm mb-4">Detailed cleanup after renovations and new builds.</p>
-<span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</a>
-
-</div>
-<div class="text-center mt-10">
-<a href="services/str-airbnb.html" class="inline-flex items-center justify-center gap-2 rounded-lg bg-ink text-white px-8 py-4 text-sm font-semibold hover:bg-ink/90 transition-all">
-Short Term Rental and Airbnb Turnovers
-<span class="material-symbols-outlined">arrow_forward</span>
-</a>
 </div>
 </div>
 </section>
 
 <!-- Testimonials -->
-<section class="py-24 bg-secondary/40 border-y border-secondary">
+<section class="py-20 lg:py-28 bg-muted">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center max-w-2xl mx-auto mb-14">
-<span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary mb-4 uppercase tracking-wider">Client Stories</span>
-<h2 class="text-4xl font-bold tracking-tight text-ink">What Our Clients Say</h2>
+<p class="text-sm font-semibold tracking-widest uppercase text-primary mb-3">Client Stories</p>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-4">What Our Clients Say</h2>
+<div class="section-divider"></div>
 </div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white p-8 rounded-xl shadow-md border border-secondary">
+
+<div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-md border border-secondary">
 <div class="flex text-amber-400 mb-4">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -449,16 +362,16 @@ Short Term Rental and Airbnb Turnovers
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="text-slate-700 mb-8 leading-relaxed">"Easy Day Cleaning has been a true partner for our home. Consistent, professional, and always thorough. We finally have peace of mind around the schedule."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center"><span class="material-symbols-outlined text-primary">person</span></div>
+<p class="text-slate-700 mb-6 leading-relaxed text-sm">"Easy Day Cleaning has been a true partner for our home. Consistent, professional, and always thorough. We finally have peace of mind around the schedule."</p>
+<div class="flex items-center gap-3 pt-4 border-t border-secondary">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center"><span class="material-symbols-outlined text-primary">person</span></div>
 <div>
 <h4 class="font-bold text-ink text-sm">Jennifer M.</h4>
 <p class="text-slate-500 text-xs">Homeowner, Oakland County</p>
 </div>
 </div>
 </div>
-<div class="bg-white p-8 rounded-xl shadow-md border border-secondary md:translate-y-6">
+<div class="bg-white p-8 rounded-2xl shadow-md border border-secondary">
 <div class="flex text-amber-400 mb-4">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -466,16 +379,16 @@ Short Term Rental and Airbnb Turnovers
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="text-slate-700 mb-8 leading-relaxed">"Communication has been seamless from day one. Our office has never looked better, and the team is dependable week after week."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center"><span class="material-symbols-outlined text-primary">person</span></div>
+<p class="text-slate-700 mb-6 leading-relaxed text-sm">"Communication has been seamless from day one. Our office has never looked better, and the team is dependable week after week."</p>
+<div class="flex items-center gap-3 pt-4 border-t border-secondary">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center"><span class="material-symbols-outlined text-primary">person</span></div>
 <div>
 <h4 class="font-bold text-ink text-sm">Marcus T.</h4>
 <p class="text-slate-500 text-xs">Office Manager</p>
 </div>
 </div>
 </div>
-<div class="bg-white p-8 rounded-xl shadow-md border border-secondary">
+<div class="bg-white p-8 rounded-2xl shadow-md border border-secondary">
 <div class="flex text-amber-400 mb-4">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -483,9 +396,9 @@ Short Term Rental and Airbnb Turnovers
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="text-slate-700 mb-8 leading-relaxed">"I manage two short term rentals and the team always turns them around beautifully. Detail-oriented and stress-free for me."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center"><span class="material-symbols-outlined text-primary">person</span></div>
+<p class="text-slate-700 mb-6 leading-relaxed text-sm">"I manage two short term rentals and the team always turns them around beautifully. Detail-oriented and stress-free for me."</p>
+<div class="flex items-center gap-3 pt-4 border-t border-secondary">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center"><span class="material-symbols-outlined text-primary">person</span></div>
 <div>
 <h4 class="font-bold text-ink text-sm">Allison R.</h4>
 <p class="text-slate-500 text-xs">Short Term Rental Host</p>
@@ -496,74 +409,54 @@ Short Term Rental and Airbnb Turnovers
 </div>
 </section>
 
-<!-- CTA Section -->
-<section class="py-24 bg-primary relative overflow-hidden">
-<div class="absolute inset-0 opacity-10">
-<svg class="h-full w-full" fill="none" preserveAspectRatio="none" viewBox="0 0 100 100">
-<path d="M0 100 L100 0 L100 100 Z" fill="white"></path>
-</svg>
-</div>
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Ready for a Cleaner Space?</h2>
+<!-- CTA -->
+<section class="py-20 lg:py-24 bg-primary text-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5">Ready for a Cleaner Space?</h2>
 <p class="text-white/90 text-lg mb-10 max-w-2xl mx-auto">Get in touch for a tailored quote. We make the entire process simple, professional, and stress-free.</p>
-<a href="contact.html" class="inline-block bg-white text-primary hover:bg-secondary px-10 py-5 rounded-lg text-base font-semibold transition-all shadow-2xl">
-                    Request a Quote
-                </a>
+<a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-full bg-white text-primary hover:bg-secondary px-10 py-4 text-base font-semibold transition-all shadow-2xl">
+Request a Quote
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
 </div>
 </section>
 
 </main>
 
 <!-- Footer -->
-<footer class="bg-white pt-20 pb-10 border-t border-secondary">
+<footer class="bg-ink text-white pt-16 pb-8">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
 <div>
-<a href="index.html" class="flex items-center gap-2 mb-6">
-<span class="text-xl font-bold tracking-tight text-primary">Easy Day Cleaning Co</span>
-</a>
-<p class="text-slate-500 mb-6 leading-relaxed text-sm">
-                    Trusted, reliable, detail-oriented cleaning services for homes and businesses across Oakland County. Cleaning Made Easy.
-                </p>
+<a href="index.html" class="text-xl font-bold tracking-tight text-white block mb-4">Easy Day Cleaning Co</a>
+<p class="text-white/70 leading-relaxed text-sm mb-5">Trusted, reliable, detail-oriented cleaning services for homes and businesses across Oakland County. Cleaning Made Easy.</p>
 <div class="flex gap-3">
-<a aria-label="Instagram" href="https://www.instagram.com/easydaycleaningco/" target="_blank" rel="noopener" class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-slate-700">
-<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+<a aria-label="Instagram" href="https://www.instagram.com/easydaycleaningco/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
 </a>
-<a aria-label="Email" href="mailto:hello@easydaycleaningco.com" class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-slate-700">
-<span class="material-symbols-outlined">mail</span>
+<a aria-label="Email" href="mailto:hello@easydaycleaningco.com" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-base">mail</span>
 </a>
 </div>
 </div>
 <div>
-<h4 class="font-bold mb-6 text-ink">Services</h4>
-<ul class="space-y-3 text-sm text-slate-500">
-<li><a class="hover:text-primary transition-colors" href="services/residential.html">Residential Cleaning</a></li>
-<li><a class="hover:text-primary transition-colors" href="services/commercial.html">Commercial Cleaning</a></li>
-<li><a class="hover:text-primary transition-colors" href="services/recurring.html">Recurring Cleaning</a></li>
-<li><a class="hover:text-primary transition-colors" href="services/deep-cleaning.html">Deep Cleaning</a></li>
-<li><a class="hover:text-primary transition-colors" href="services/move-in-out.html">Move In and Move Out</a></li>
-<li><a class="hover:text-primary transition-colors" href="services/post-construction.html">Post Construction</a></li>
-<li><a class="hover:text-primary transition-colors" href="services/str-airbnb.html">Short Term Rental and Airbnb</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold mb-6 text-ink">Company</h4>
-<ul class="space-y-3 text-sm text-slate-500">
-<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="services.html">All Services</a></li>
+<h4 class="font-bold mb-5 text-white text-sm uppercase tracking-wider">Quick Links</h4>
+<ul class="space-y-3 text-sm text-white/70">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
 <li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold mb-6 text-ink">Get in Touch</h4>
-<ul class="space-y-3 text-sm text-slate-500">
+<h4 class="font-bold mb-5 text-white text-sm uppercase tracking-wider">Get in Touch</h4>
+<ul class="space-y-3 text-sm text-white/70">
 <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">location_on</span> Oakland County, Michigan</li>
 <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span> <a class="hover:text-primary transition-colors" href="mailto:hello@easydaycleaningco.com">hello@easydaycleaningco.com</a></li>
 <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">photo_camera</span> <a class="hover:text-primary transition-colors" href="https://www.instagram.com/easydaycleaningco/" target="_blank" rel="noopener">@easydaycleaningco</a></li>
 </ul>
 </div>
 </div>
-<div class="pt-8 border-t border-secondary flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-500">
+<div class="pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/60">
 <p>&copy; 2026 Easy Day Cleaning Co. All rights reserved.</p>
 <div class="flex gap-6">
 <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
@@ -578,20 +471,24 @@ Short Term Rental and Airbnb Turnovers
     var toggle = document.getElementById('mobile-menu-toggle');
     var close = document.getElementById('mobile-menu-close');
     var menu = document.getElementById('mobile-menu');
-    var servicesToggle = document.getElementById('mobile-services-toggle');
-    var servicesMenu = document.getElementById('mobile-services-menu');
-    var servicesChevron = document.getElementById('mobile-services-chevron');
     function open() { menu.classList.remove('hidden'); document.body.classList.add('menu-open'); }
     function shut() { menu.classList.add('hidden'); document.body.classList.remove('menu-open'); }
     if (toggle) toggle.addEventListener('click', open);
     if (close) close.addEventListener('click', shut);
-    if (servicesToggle) servicesToggle.addEventListener('click', function() {
-        var expanded = !servicesMenu.classList.contains('hidden');
-        servicesMenu.classList.toggle('hidden');
-        servicesChevron.classList.toggle('rotate-180');
-        servicesToggle.setAttribute('aria-expanded', String(!expanded));
-    });
     if (menu) menu.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', shut); });
+
+    var tabs = document.querySelectorAll('.tab-btn');
+    var panels = document.querySelectorAll('.tab-panel');
+    tabs.forEach(function(t) {
+        t.addEventListener('click', function() {
+            var name = t.getAttribute('data-tab');
+            tabs.forEach(function(x) { x.classList.remove('active'); });
+            panels.forEach(function(p) { p.classList.remove('active'); });
+            t.classList.add('active');
+            var panel = document.querySelector('[data-panel="' + name + '"]');
+            if (panel) panel.classList.add('active');
+        });
+    });
 })();
 </script>
 
